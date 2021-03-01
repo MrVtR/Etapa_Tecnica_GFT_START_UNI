@@ -24,15 +24,15 @@ public class Desafio1_GFT {
         Movel m = new Movel("Mesa", 270, 2);
         Produto p = new Produto("Caderno", 10.5, 10);
         Movel m2 = new Movel("Cadeira", 234.25, 2);
-        Produto p2 = new Produto("Caneta",0.7, 15);
-        
+        Produto p2 = new Produto("Caneta", 0.7, 15);
+
         produtos.add(e);
         produtos.add(e2);
         produtos.add(m);
         produtos.add(p);
         produtos.add(m2);
         produtos.add(p2);
-        
+
         Caixa c = new Caixa(produtos);
         c.calcularTotal();
     }

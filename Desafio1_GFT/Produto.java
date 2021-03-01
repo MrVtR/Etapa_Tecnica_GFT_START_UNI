@@ -15,38 +15,24 @@ public class Produto {
     private int qtde;
 
     public Produto(String nome, double valor, int qtde) {
-        setNome(nome);
-        setValor(valor);
-        setQtde(qtde);
+        this.nome = nome;
+        this.valor = valor;
+        this.qtde = qtde;
     }
 
-    protected String getNome() {
+    public String getNome() {
         return nome;
     }
 
-    protected void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    protected double getValor() {
+    public double getValor() {
         return valor;
     }
 
-    protected void setValor(double valor) {
-        this.valor = valor;
-    }
-
-    protected int getQtde() {
+    public int getQtde() {
         return qtde;
     }
-
-    protected void setQtde(int qtde) {
-        this.qtde = qtde;
-    }
     
-    //Mudar para protected
-    protected double calcularValorFinal(){
+    public double calcularValorFinal(){
         return (this.valor*this.qtde) + (0.1*this.valor*this.qtde);
     }
-    
 }
