@@ -25,11 +25,12 @@ public class Desafio3_GFT {
         System.out.println("Digite o intervalo final: ");
         intervaloF = sc.nextInt();
         intervalo = intervaloF - intervaloI;
-        if(intervalo <= 15)
-            for(int i =intervaloI; i<=intervaloF;i++)
+        if (intervalo <= 15) {
+            for (int i = intervaloI; i <= intervaloF; i++) {
                 System.out.println(Math.pow(i, 3));
-        else
+            }
+        } else {
             System.out.println("Intervalo inválido, maior que 15, encerrando programa.");
+        }
     }
-    
 }
